@@ -11,6 +11,10 @@ import { SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger }
 import ModeToggle from "./ModeToggle"
 
 
+export const metadata = {
+	title: 'Zakinnovate original portfolio',
+	Description :'zakaria hadraoui personnal website'
+}
 export function NavBar() {
 
     return (

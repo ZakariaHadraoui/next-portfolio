@@ -6,6 +6,11 @@ import Image from "next/image";
 import { Section, Container } from "./components/craft";
 import { Button } from "@/components/ui/button";
 
+export const metadata = {
+	title: 'Zakinnovate original portfolio',
+	Description :'zakaria hadraoui personnal website'
+}
+
 
 
 const Home = () => {

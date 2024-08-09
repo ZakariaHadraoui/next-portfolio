@@ -20,12 +20,18 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import { Description } from "@radix-ui/react-dialog";
 
 const formSchema = z.object({
   email: z.string().email({
     message: "Please enter a valid email address.",
   }),
 });
+
+export const metadata = {
+	title: 'Zakinnovate original portfolio',
+	Description :'zakaria hadraoui personnal website'
+}
 
 export default function Footer() {
   // 1. Define your form.
@@ -48,13 +54,12 @@ export default function Footer() {
         <Container className="grid gap-6">
           <div className="not-prose flex flex-col gap-6">
             <Link href="/">
-              <h3 className="sr-only">brijr/components</h3>
+              <h3 className="sr-only">Hadraoui Zakaria</h3>
              
             </Link>
             <p>
               <Balancer>
-                brijr/components is a collection of Next.js, React, Typescript
-                components for building landing pages and websites.
+                Zakaria Hadraoui is a full stack web developper 
               </Balancer>
             </p>
             <div className="flex gap-2">
@@ -72,7 +77,7 @@ export default function Footer() {
 
           <Form {...form}>
             <form
-              onSubmit={form.handleSubmit(onSubmit)}
+             
               className="not-prose space-y-4"
             >
               <FormField
@@ -107,7 +112,7 @@ export default function Footer() {
           </div>
           <p className="text-muted-foreground">
             ©{" "}
-            <a href="https://github.com/brijr/components">brijr/components</a>.
+            <a href="/">Zakinnovate</a>.
             All rights reserved. 2024-present.
           </p>
         </Container>
